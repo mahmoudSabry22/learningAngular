@@ -1,0 +1,27 @@
+<p>products works!</p>
+<h1>product Name is : {{productName}}</h1>
+
+<h1>product Name UpperCase : {{productName.toUpperCase()}}</h1>
+
+<h1>Product Price is : {{price}}</h1>
+
+<h1>Product quentity is : {{quantity}}</h1>
+
+<h1>TotalPric : {{price*quantity}}</h1>
+<input [(ngModel)] = "productName">
+
+<button (click)="IncreasePrice()"> Increase the price</button>
+
+<button (click)="decreasePrice()"> Decrease the price</button>
+
+<button (click)="IncreaseQty()"> Increase the quentity</button>
+
+<button (click)="decreaseQty()"> Decrease the quentity</button>
+<br>
+<button [disabled]="isDisabled">Save Product</button>
+<br>
+<button (click)="makeDisabled(true)">Disabled Save</button>
+<br>
+<button (click)="makeDisabled(false)">Enable save</button>
+
+
